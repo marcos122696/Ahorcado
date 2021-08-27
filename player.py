@@ -1,33 +1,31 @@
 import os
 
 class Player:
-    nombre = str
-    pts = int
 
-    def __init__(self, nombre, pts=0):
-        self.nombre = nombre
+    def __init__(self, name, pts=0):
+        self.name = name
         self.pts = pts
 
-
     @property
-    def pts(self):
+    def get_pts(self):
         return self.pts
 
-
-    @pts.setter
-    def more_pts(self, pts_win):
-        self.pts += pts_win
+    @set
+    def set_pts(self, pts):
+        self.pts += pts
 
     
-    def save_player():
+    def save_player(self, player):
+        points = str(player.pts)
         try:
-            name_player = input("Ingrese el nombre del jugador: ")
-            base_dir = os.path.dirname(os.path.realpath(__file__))
-            with open(os.path.join(base_dir, 'player.txt'), "a", encoding="utf-8") as f:
-                for line in f:
-                    line.write(name_player)
+            with open(os.path.abspath('player.txt'), "a", encoding="utf-8") as f:
+                f.write(player.name + " " + points + "\n")
+                f.close()
         except:
             print("Error al guardar jugador")
 
 if __name__ == '__main__':
-    Player.save_player()
+    name = input("Igrese el nombre del jugador: ")
+    new_player = Player(name)
+    # name_player = new_player.name
+    new_player.save_player(new_player)

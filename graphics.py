@@ -3,6 +3,9 @@ import time
 
 class Graphics:
 
+    def __init__(self):
+        pass
+
     def welcome():
         print(""""
         ▄▄▄▄▄    ▀   ▄▄▄▄▄   ▄▄▄   ▄   ▄       ▄   ▄▄▄▄▄   ▄▄▄   ▄   ▀   ▄▄▄▄     ▄▄▄▄▄▄

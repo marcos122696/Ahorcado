@@ -1,0 +1,7 @@
+marcos
+alejandro <bound method Player.get_pts of <__main__.Player object at 0x0000013AC3AFCFD0>>
+jorjge <class 'int'>
+marcos <class 'int'>
+lucas <class 'int'>
+zoe <class 'int'>
+pocho <class 'int'>

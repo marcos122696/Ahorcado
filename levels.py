@@ -4,6 +4,9 @@ import os
 
 class Level:
 
+    def __init__(self):
+        pass
+
     def normalize(char):
         """Receives an accented vowel and returns it without an accent.
 

@@ -36,7 +36,7 @@ Elije el nivel: """ + chr(27) + "[0m"))
                 input("Opcion incorrecta, precione ENTER para continuar")
                 run()
         except:
-            print("QUE?")
+            print("Err")
             time.sleep(3)
             break
         
